@@ -16,7 +16,7 @@ Per funcionar, necessita la base de dades encriptada que es pot descarregar desd
 
 També és necessari tenir instal·lat el runtime de NodeJS, que és a on és resol la desencriptació de les dades.
 
-Es necessari també un fitxer de configuració que es digui referendumBot.ini amb el següent contingut:
+Es necessari també un fitxer de configuració que es digui **referendumBot.ini** amb el següent contingut:
 
 dirDB=_Directori on està la base de dades (carpeta db)_  
 nodejsCmd=_Ruta complerta al executable de nodeJS_  
