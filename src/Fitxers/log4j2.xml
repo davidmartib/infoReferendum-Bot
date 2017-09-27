@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR" name="referendumBot">
+    <Properties>
+        <Property name="LOG_DIR">logs</Property>
+        <Property name="ARCHIVE">${LOG_DIR}/arxiu</Property>
+        <Property name="PATTERN">[referendumBot] %-5p %d{dd-MM-yyyy HH:mm:ss.SSS} %c %m%n</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Consola" target="SYSTEM_OUT">
+            <PatternLayout pattern="${PATTERN}"/>
+        </Console>
+        <RollingFile name="fitxerRotatiu"
+                     fileName="${LOG_DIR}/referendumBot.log"
+                     filePattern="${ARCHIVE}/referendumBot.log.%d{yyyy-MM-dd}.gz">
+            <PatternLayout pattern="${PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="7"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Consola"/>
+            <AppenderRef ref="fitxerRotatiu"/>
+        </Root>
+    </Loggers>
+</Configuration>
