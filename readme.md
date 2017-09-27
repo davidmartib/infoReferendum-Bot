@@ -12,7 +12,7 @@ Està basat en els projectes:
 - https://github.com/onvotar-bot/onvotar-whatsapp
 - https://github.com/referendum1oct/referendum1oct.github.io
 
-Per funcionar, necessita la base de dades encriptada que es pot descarregar desde https://github.com/onvotar-bot/onvotar-base  
+Per funcionar, necessita la base de dades encriptada que es pot descarregar de https://github.com/onvotar-bot/onvotar-base  
 
 També és necessari tenir instal·lat el runtime de NodeJS, que és a on és resol la desencriptació de les dades.
 
